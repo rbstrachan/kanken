@@ -2,6 +2,13 @@
 title: Welcome!
 ---
 Welcome to the Reiwa Kanken Reference & Diagnostic [...].  %%This site is also available in [Japanese]().%%
+
+%%
+make my own yoji anki deck from yoji..jitenon (scrape or buy)
+- be aware it has been noted some 1k yoji have been mislabelled into lower levels
+- publish the deck and keep it up to date
+- add to kanken reference resouces
+%%
 %%
 # Learning Materials
 There are a wide variety of resources available to help study for the kanken. [...].
