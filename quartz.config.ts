@@ -1,30 +1,26 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
+const lang = process.env.QUARTZ_LANG || 'ja ';
+const base = "kanken.reiwa.ca"
+
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Kanken Reference",
-    pageTitleSuffix: "",
+    pageTitle: "令和漢検参考資料館",
+    pageTitleSuffix: "・令和漢検参考資料館",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
-    locale: "en-GB",
-    baseUrl: "quartz.jzhao.xyz",
+    analytics: null,
+    locale: lang === 'ja' ? "ja-JP" : lang === 'fr' ? "fr-FR" : "en-GB",
+    baseUrl: lang === 'ja' ? base : `${base}/${lang}`,
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Yuji Syuku",
+        body: "Yuji Syuku",
         code: "IBM Plex Mono",
       },
       colors: {
